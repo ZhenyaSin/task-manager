@@ -67,4 +67,3 @@ console.log(chaink1.currentCapacity)
 console.log(chaink1.temperature)
 chaink1.turnOn()
 console.log(chaink1.temperature)
-
