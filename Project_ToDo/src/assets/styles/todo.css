@@ -1,0 +1,55 @@
+#app {
+    max-width: 500px;
+    width: 100%;
+}
+
+#app {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.todo {
+    display: flex;
+    gap: 5px;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    border: 1px solid black;
+    padding: 10px;
+}
+
+.todo .progress-bar-wrap {
+    display: flex;
+    gap: 10px;
+    height: 30px;
+    width: 100%;
+}
+
+.todo .progress-bar-wrap .progress-bar {
+    flex-grow: 1;
+    height: 100%;
+    background: lightgray;
+    width: 100%;
+}
+
+.todo .progress-bar-wrap .progress-bar-total-value {
+    text-align: left;
+    width: 40px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.todo .progress-bar-wrap .progress-bar-current-value {
+    width: 80px;
+    text-align: left;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    padding: 0 8px;
+}
+
+.todo .progress-bar-wrap .progress-bar .progress-bar-line {
+    height: 100%;
+    background: red;
+}
