@@ -6,7 +6,8 @@ export class UI {
         text = ''
     }) {
         const element = document.createElement(tag) // <div></div>
-        const attributesEntries = Object.keys(attrs)
+        const attributesEntries = Object.entries(attrs)
+        
         const iterations = Math.max(attributesEntries.length, children.length, classes.length)
         
         element.innerText = text
@@ -27,8 +28,6 @@ export class UI {
             }
 
         }
-
-        
         return element
     }
 }
